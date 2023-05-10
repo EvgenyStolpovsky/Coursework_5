@@ -13,13 +13,13 @@ def main():
     params = config()
 
     #парсинг всех вакансий от работодателей по id
-    data_requests = get_hh_vacanc(id)
+    data_requests = get_hh_vacancies(id)
 
     #создание БД
     create_database('database_HH', params)
 
     #сохранение данных в созданную таблицу в БД
-    save_data_to_database(data_requests, 'database_HH', params)
+    save_data_database(data_requests, 'database_HH', params)
 
     #ковертируем sql файл для извлечения вопросов
     convert_sql()
