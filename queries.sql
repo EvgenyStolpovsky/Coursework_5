@@ -21,5 +21,5 @@ SQL_4 = '''SELECT vacancy_name
 
 SQL_5 = '''SELECT vacancy_name, url
     FROM employers
-    WHERE vacancy_name ILIKE '%{keyword}%
+    WHERE vacancy_name ILIKE '%{keyword}%'
     '''
